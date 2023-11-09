@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Dancing+Script:wght@500&family=Montserrat:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(45deg, #190361 0%, #b0f 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 28rem;
+  padding: 3.5rem;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 0.3rem;
+  background: #fff;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.8);
+}
+
+.scene-1,
+.scene-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.scene-1 h1,
+.scene-2 h1 {
+  color: #34355b;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.scene-1 p {
+  color: #34355b;
+  font-family: "DM Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding-bottom: 1.25rem;
+}
+
+.fortune-cookie:hover {
+  animation: fortune-cookie 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  cursor: pointer;
+}
+
+/* DIV 2 */
+
+.message {
+  padding: 0.625rem;
+  background: #e4edf1;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.5);
+  animation: messageCookie 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.message p {
+  color: #000;
+  text-align: center;
+  font-family: "Dancing Script", Arial, Helvetica, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.try-button {
+  padding: 1rem 3rem;
+  border-radius: 0.25rem;
+  border: none;
+  background: #ff9500;
+
+  color: #fff;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 1rem;
+  font-weight: 700;
+
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.try-button:hover {
+  background: #ae6600;
+}
+
+.scene-2 img {
+  padding: 3.5rem 0rem;
+}
+
+/* KEYFRAMES */
+
+@keyframes fortune-cookie {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  10% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  20% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  30% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  50% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  70% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  90% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+@keyframes messageCookie {
+  0% {
+    transform: translateZ(-100px) translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biscoito da sorte</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- CENA 1 -->
+      <section class="scene-1 " id="firstScene">
+        <h1>Qual é a sua sorte de hoje?</h1>
+        <p>Abra o biscoito e descubra!</p>
+        <img class="fortune-cookie" src="img/Ebene 4.svg" alt="Biscoito da sorte" id="fortuneCookie" onclick="openFortuneCookie()"/>
+      </section>
+
+      <!-- CENA 2 -->
+      <section class="scene-2 hide" id="secondScene">
+        <h1>Aqui está a sua sorte de hoje:</h1>
+        <div class="message">
+          <p id="messageCookie">
+          </p>
+        </div>
+        <img class="fortune-cookie-open" src="img/_Group_.svg" alt="Biscoito da sorte" />
+
+        <button class="try-button" id="tryButton" onclick="tryNewFortuneCookie()">Abrir outro biscoito</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
